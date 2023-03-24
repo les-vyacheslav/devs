@@ -1,0 +1,96 @@
+.new-account {
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__form {
+    }
+
+    &__google {
+    }
+
+    &__google-icon {
+    }
+
+    &__google-text {
+    }
+
+    &__or {
+    }
+
+    &__or-line {   
+    }
+
+    &__or-text {   
+    }
+
+    &__form-input {
+    }
+
+    &__agreement {
+        margin-bottom: 15px;
+        margin-left: 2px;
+        margin-right: 2px;
+        line-height: 1.4;
+        font-size: 12px;
+        font-weight: 500;
+        color: #BCBCBC;
+    }
+
+    &__agreement-link {
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #BCBCBC;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (any-hover: hover) {
+
+            &:hover {
+                color: $primaryColor;
+                
+                &::before {
+                    background-color: $primaryColor;
+                }
+            }
+        }
+
+        @include mobileClickAnimation($textColor3, 5px, 5px, 0%, 0%, 4px);
+
+        &.new-account__agreement-link_clicked {
+            color: $primaryColor;
+
+            &::before {
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    &__submit-button {
+        margin-bottom: 15px;
+    }
+
+    &__submit-button-text {
+    }
+
+    &__link-button {
+    }
+
+    &__link-button-text {
+    }
+}

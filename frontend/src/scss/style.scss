@@ -14,16 +14,6 @@ $borderColor3: #CECECE;
 $registrationBackgroundColor: #3B424A;
 
 $minWidth: 320px;
-$maxContentWidth: 1326px;
-$containerPadding: 20px;
-
-$maxContainerWidth: $maxContentWidth + $containerPadding * 2; 
-
-$desktop: $maxContainerWidth + 0.02px;
-$tablet: 992px;
-$mobile: 768.02px;
-$smallMobile: 480.02px;
-
 $mobile1: 360px;
 $mobile2: 375px;
 $mobile3: 414px;
@@ -44,5 +34,7 @@ $desktop6: 1920px;
 @import "fonts.scss";
 @import "basic-components/mixins.scss";
 @import "basic-components/common-styles.scss";
-@import "sign-in-page.scss";
+@import "sign-in.scss";
+@import "new-account.scss";
+@import "reset-password.scss";
 

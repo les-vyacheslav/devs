@@ -40,6 +40,7 @@ body {
     }
 }
 
+/* 
 .container {
     max-width: $maxContainerWidth;
     min-width: $minWidth;
@@ -47,6 +48,7 @@ body {
     margin: 0 auto;
     padding: 0 $containerPadding;
 }
+ */
 
 .start-page {
     background-color: $registrationBackgroundColor;
@@ -54,7 +56,7 @@ body {
     &__content {
         width: 100%;
         min-width: $minWidth;
-        height: 100vh;
+        min-height: 100vh;
         @include adaptiveValue("padding-top", 50px, 80px, $mobile4, $mobile5);
         @include adaptiveValue("padding-bottom", 15px, 30px, $mobile4, $mobile5);
         @include adaptiveValue("padding-left", 15px, 30px, $mobile4, $mobile5);
@@ -64,7 +66,7 @@ body {
         @media (min-width: $mobile5) {
             margin: 50px auto;
             width: 536px;
-            height: auto;
+            min-height: auto;
             border-radius: 10px;
             padding: 40px 30px;
         }
@@ -121,6 +123,7 @@ body {
     }
 
     &__google-text {
+        white-space: nowrap;
         font-weight: 500;
         color: #1D2E4A;
     }
@@ -172,10 +175,87 @@ body {
     }
 
     &__text-link {
+        display: inline-block;
+        position: relative;
         margin-left: 2px;
         line-height: 1;
         font-size: 14px;
         font-weight: 500;
         color: $primaryColor;
+
+        @media (any-hover: hover) {
+    
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: transparent;
+                transition: background-color 0.3s ease;
+            }
+    
+            &:hover::after {
+                background-color: $primaryColor;
+            }
+        }
+
+        @include mobileClickAnimation;
+    }
+
+    &__form-button {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    &__form-button-text {
+        white-space: nowrap;
+        line-height: 1.2;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__submit-button {
+        background-color: $primaryColor;
+
+        @media (any-hover: hover) {
+    
+            &:hover {           
+                background-color: #886c56;
+            }
+        }
+
+        &.start-page__form-button_clicked {
+            background-color: #886c56;
+        }
+    }
+
+    &__submit-button-text {
+        color: $secondaryColor;
+    }
+
+    &__link-button {
+        background-color: #F4F4F4;
+
+        @media (any-hover: hover) {
+    
+            &:hover {           
+                background-color: #DFDFDF;
+            }
+        }
+
+        &.start-page__form-button_clicked {
+            background-color: #DFDFDF;
+        }
+    }
+
+    &__link-button-text {
+        color: $textColor2;
     }
 }

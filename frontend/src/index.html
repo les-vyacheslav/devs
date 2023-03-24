@@ -8,43 +8,64 @@
 <body>
     <div class="page-wrapper">
 
-        <main class="page-wrapper__page-content sign-in-page start-page">
+        <main class="page-wrapper__page-content sign-in start-page">
 
-            <div class="sign-in-page__content start-page__content">
-                <h1 class="sign-in-page__title start-page__title">
+            <div class="sign-in__content start-page__content">
+                <h1 class="sign-in__title start-page__title">
                     Welcome back
                 </h1>
-                <form action="#" class="sign-in-page__form start-page__form">
-                    <a href="#" class="sign-in-page__google 
+                <form action="#" class="sign-in__form start-page__form">
+                    <a href="#" class="sign-in__google 
                                        start-page__google 
                                        start-page__form-block">
-                        <img src="/img/start-page/google.svg" 
+                        <img src="img/start-page/google.svg" 
                              alt="" 
-                             class="sign-in-page__google-icon start-page__google-icon">
-                        <div class="sign-in-page__google-text start-page__google-text">
-                            Continue&nbsp;with&nbsp;Google
+                             class="sign-in__google-icon start-page__google-icon">
+                        <div class="sign-in__google-text start-page__google-text">
+                            Continue with Google
                         </div>
                     </a>
-                    <div class="sign-in-page__or start-page__or">
-                        <div class="sign-in-page__or-line start-page__or-line"></div>
-                        <div class="sign-in-page__or-text start-page__or-text">OR</div>
-                        <div class="sign-in-page__or-line start-page__or-line"></div>
+                    <div class="sign-in__or start-page__or">
+                        <div class="sign-in__or-line start-page__or-line"></div>
+                        <div class="sign-in__or-text start-page__or-text">OR</div>
+                        <div class="sign-in__or-line start-page__or-line"></div>
                     </div>
-                    <input class="sign-in-page__form-input start-page__form-input start-page__form-block" 
+                    <input class="sign-in__form-input start-page__form-input start-page__form-block" 
                            type="email" 
                            name="email" 
                            autocomplete="off"
                            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
                            required 
                            placeholder="E-mail address">
-                    <input class="sign-in-page__form-input start-page__form-input start-page__form-block" 
+                    <input class="sign-in__form-input start-page__form-input start-page__form-block" 
                            type="password" 
                            name="password" 
                            autocomplete="off"
                            required 
                            placeholder="Password">
-                    <a href="#" class="sign-in-page__forgot-link start-page__text-link">
+                    <a href="reset-password.html" class="sign-in__forgot-link start-page__text-link">
                         Forgot password?
+                    </a>
+                    <button type="submit" 
+                            class="sign-in__submit-button 
+                                   start-page__submit-button 
+                                   start-page__form-block
+                                   start-page__form-button">
+                        <div class="sign-in__submit-button-text 
+                                    start-page__submit-button-text 
+                                    start-page__form-button-text">
+                            Sign in
+                        </div>
+                    </button>
+                    <a href="new-account.html" class="sign-in__link-button 
+                                       start-page__link-button 
+                                       start-page__form-block
+                                       start-page__form-button">
+                        <div class="sign-in__link-button-text 
+                                    start-page__link-button-text
+                                    start-page__form-button-text">
+                            Create a new account
+                        </div>
                     </a>
                 </form>
             </div>
