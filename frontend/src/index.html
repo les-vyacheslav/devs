@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "descr": "site builder Devs",
+        "keywords": "Devs, site builder",
+        "title": "Sign in to Devs", 
+    })
+<body>
+    <div class="page-wrapper">
+
+        <!-- @@include('html/header.html',{}) -->
+        
+        <main class="page-wrapper__page-content sign-in-page start-page">
+
+            <div class="sign-in-page__content start-page__content">
+                <h1 class="sign-in-page__title start-page__title">
+                    Welcome back
+                </h1>
+                <form action="#" class="sign-in-page__form start-page__form">
+                    <a href="#" class="sign-in-page__google 
+                                       start-page__google 
+                                       start-page__form-block">
+                        <img src="/img/start-page/google.svg" 
+                             alt="" 
+                             class="sign-in-page__google-icon start-page__google-icon">
+                        <div class="sign-in-page__google-text start-page__google-text">
+                            Continue&nbsp;with&nbsp;Google
+                        </div>
+                    </a>
+                    <div class="sign-in-page__or start-page__or">
+                        <div class="sign-in-page__or-line start-page__or-line"></div>
+                        <div class="sign-in-page__or-text start-page__or-text">OR</div>
+                        <div class="sign-in-page__or-line start-page__or-line"></div>
+                    </div>
+                    <input class="sign-in-page__form-input start-page__form-input start-page__form-block" 
+                           type="email" 
+                           name="email" 
+                           autocomplete="off"
+                           pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
+                           required 
+                           placeholder="E-mail address">
+                    <input class="sign-in-page__form-input start-page__form-input start-page__form-block" 
+                           type="password" 
+                           name="password" 
+                           autocomplete="off"
+                           required 
+                           placeholder="Password">
+                    <a href="#" class="sign-in-page__forgot-link start-page__text-link">
+                        Forgot password?
+                    </a>
+                </form>
+            </div>
+
+            <!-- @@include('html/sections/catalog.html',{})
+
+            @@include('html/sections/production.html',{})
+
+            @@include('html/sections/partnership.html',{}) -->
+
+        </main>
+
+        <!-- @@include('html/footer.html',{}) -->
+
+    </div>
+
+    @@include('html/js.html',{})
+
+</body>
+</html>

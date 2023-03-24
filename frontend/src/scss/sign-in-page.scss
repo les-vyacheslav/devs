@@ -1,0 +1,277 @@
+.sign-in-page {
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__form {
+    }
+
+    &__google {
+    }
+
+    &__google-icon {
+    }
+
+    &__google-text {
+    }
+
+    &__or {
+    }
+
+    &__or-line {   
+    }
+
+    &__or-text {   
+    }
+
+    &__form-input {
+    }
+
+    &__forgot-link {
+        margin-bottom: 15px;
+    }
+
+    /* &__catalog {
+        @include adaptiveValue("margin-bottom", 50px, 120px, $minWidth, $mobile);
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("margin-bottom", 60px, 120px, $mobile, $desktop);
+        }
+    }
+
+    &__production {
+        position: relative;
+        @include adaptiveValue("margin-bottom", 50px, 120px, $minWidth, $mobile);
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("margin-bottom", 60px, 120px, $mobile, $desktop);
+        }
+    }
+
+    &__partnership {
+        position: relative;
+        @include adaptiveValue("margin-bottom", 50px, 120px, $minWidth, $mobile);
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("margin-bottom", 60px, 120px, $mobile, $desktop);
+        }
+    } */
+}
+
+/* .button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include adaptiveValue("height", 40px, 50px, $minWidth, $mobile);
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease, 
+                border-color 0.3s ease,
+                opacity 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+
+    @media (min-width: $mobile) {
+        @include adaptiveValue("height", 40px, 50px, $mobile, $desktop);
+    }
+
+    &_color_primary {
+        border-color: $secondaryColor;
+        background-color: $primaryColor;
+        color: $secondaryColor;
+
+        @media (any-hover: hover) {
+    
+            &:hover {           
+                background-color: $backgroundColor;
+            }
+        }
+
+        &.button_clicked {
+            background-color: $backgroundColor;
+        }
+    }
+
+    &_color_transparent {
+        border-color: $fourthColor;
+        background-color: transparent;
+        color: $fourthColor;
+
+        @media (any-hover: hover) {
+    
+            &:hover {           
+                border-color: $primaryColor;
+                color: $primaryColor;
+            }
+        }
+
+        &.button_clicked {
+            color: $primaryColor;
+            border-color: $primaryColor;
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        z-index: 10;
+        line-height: 1;
+        font-family: $TTNorms;
+        @include adaptiveValue("font-size", 16px, 20px, $minWidth, $mobile);
+        font-weight: 400;
+        pointer-events: none;
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("font-size", 16px, 20px, $mobile, $desktop);
+        }
+    }
+} */
+
+/* .title {
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 28px, 42px, $minWidth, $mobile);
+
+    @media (min-width: $mobile) {
+        @include adaptiveValue("font-size", 32px, 42px, $mobile, $desktop);
+    }
+    
+    &__highlighting {
+        color: $primaryColor;
+    }
+} */
+
+/* .form {
+
+    &__input {
+        display: block;
+        width: 100%;
+        @include adaptiveValue("margin-bottom", 7px, 20px, $minWidth, $mobile);
+        @include adaptiveValue("padding", 7px, 10px, $minWidth, $mobile);
+        border-bottom: 1px solid $fourthColor;
+        background-color: transparent;
+        line-height: 1.2;
+        font-family: $TTNorms;
+        @include adaptiveValue("font-size", 15px, 24px, $minWidth, $mobile);
+        font-weight: 400;
+        color: $secondaryColor;
+        
+        @media (min-width: $mobile) {
+            @include adaptiveValue("margin-bottom", 7px, 10px, $mobile, $desktop);
+            @include adaptiveValue("padding", 7px, 10px, $mobile, $desktop);
+            @include adaptiveValue("font-size", 16px, 18px, $mobile, $desktop);
+        }
+
+        
+        &::placeholder {
+            color: $primaryColor;
+            transition: color 0.3s ease;
+		}
+
+        &:focus {
+            
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    &__agreement {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        @include adaptiveValue("margin-top", 15px, 40px, $minWidth, $mobile);
+        @include adaptiveValue("margin-bottom", 20px, 30px, $minWidth, $mobile);
+        @include adaptiveValue("line-height", 14px, 20px, $minWidth, $mobile);
+        @include adaptiveValue("font-size", 12.5px, 18px, $minWidth, $mobile);
+        font-weight: 400;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+
+        @media (min-width: $mobile) {
+            @include adaptiveValue("margin-top", 15px, 25px, $mobile, $desktop);
+            @include adaptiveValue("margin-bottom", 7px, 15px, $mobile, $desktop);
+            line-height: 14px;
+            font-size: 12.5px;
+        }
+    }
+
+    &__agreement-input {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__agreement-checkbox {
+        position: relative;
+        @include adaptiveValue("margin-right", 5px, 10px, $minWidth, $mobile);
+        flex-grow: 0;
+        flex-shrink: 0;
+        @include adaptiveValue("flex-basis", 10px, 16px, $minWidth, $mobile);
+        @include adaptiveValue("height", 10px, 16px, $minWidth, $mobile);
+        @include adaptiveValue("margin-top", 0px, -1px, $minWidth, $mobile);
+        border: 1px solid $fourthColor;
+        background-color: $secondaryColor;
+
+        @media (min-width: $mobile) {
+            flex-basis: 12px;
+            height: 12px;
+            margin-top: -1px;
+            margin-right: 5px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 50%;
+            bottom: 50%;
+            @include adaptiveValue("width", 5px, 8px, $minWidth, $mobile);
+            @include adaptiveValue("height", 7px, 11px, $minWidth, $mobile);
+            border-right: 2px solid $primaryColor;
+            border-bottom: 2px solid $primaryColor;
+            transform: translate(50%, 35%) rotate(45deg);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+            @media (min-width: $mobile) {
+                width: 6px;
+                height: 8px;
+            }
+
+            .form__agreement-input:checked + & {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__agreement-text {
+        color: $fourthColor;
+        transition: color 0.3s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+
+        .form__agreement-input:checked ~ & {
+            color: $primaryColor;
+        }
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &__button-text {
+    }
+} */

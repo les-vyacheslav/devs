@@ -1,0 +1,48 @@
+@use "sass:math";
+
+$Muller: Muller;
+$TTNorms: TTNorms;
+$primaryFont: SFProDisplay;
+$primaryColor: #9A8370;
+$secondaryColor: #FFF;
+$textColor1: #333333;
+$textColor2: #666666;
+$textColor3: #9A9AA4;
+$borderColor1: #E1E3E7;
+$borderColor2: #E2E2E2;
+$borderColor3: #CECECE;
+$registrationBackgroundColor: #3B424A;
+
+$minWidth: 320px;
+$maxContentWidth: 1326px;
+$containerPadding: 20px;
+
+$maxContainerWidth: $maxContentWidth + $containerPadding * 2; 
+
+$desktop: $maxContainerWidth + 0.02px;
+$tablet: 992px;
+$mobile: 768.02px;
+$smallMobile: 480.02px;
+
+$mobile1: 360px;
+$mobile2: 375px;
+$mobile3: 414px;
+$mobile4: 480px;
+$mobile5: 600px;
+$tablet1: 768px;
+$tablet2: 800px;
+$tablet3: 1024px;
+$tablet4: 1280px;
+$desktop1: 1366px;
+$desktop2: 1440px;
+$desktop3: 1536px;
+$desktop4: 1600px;
+$desktop5: 1680px;
+$desktop6: 1920px;
+
+@import "basic-components/reset.scss";
+@import "fonts.scss";
+@import "basic-components/mixins.scss";
+@import "basic-components/common-styles.scss";
+@import "sign-in-page.scss";
+
