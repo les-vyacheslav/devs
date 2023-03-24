@@ -8,7 +8,7 @@
     <meta name="description" content="site builder Devs">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Devs, site builder">
-    <title>Sign in to Devs</title>
+    <title>Create new account</title>
     <link rel="stylesheet" href="css/style.min.css?_v=20230325002050">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -33,63 +33,71 @@
 <body>
     <div class="page-wrapper">
 
-        <main class="page-wrapper__page-content sign-in start-page">
+        <main class="page-wrapper__page-content new-account start-page">
 
-            <div class="sign-in__content start-page__content">
-                <h1 class="sign-in__title start-page__title">
-                    Welcome back
+            <div class="new-account__content start-page__content">
+                <h1 class="new-account__title start-page__title">
+                    New account
                 </h1>
-                <form action="#" class="sign-in__form start-page__form">
-                    <a href="#" class="sign-in__google 
+                <form action="#" class="new-account__form start-page__form">
+                    <a href="#" class="new-account__google 
                                        start-page__google 
                                        start-page__form-block">
                         <img src="img/start-page/google.svg" 
                              alt="" 
-                             class="sign-in__google-icon start-page__google-icon">
-                        <div class="sign-in__google-text start-page__google-text">
+                             class="new-account__google-icon start-page__google-icon">
+                        <div class="new-account__google-text start-page__google-text">
                             Continue with Google
                         </div>
                     </a>
-                    <div class="sign-in__or start-page__or">
-                        <div class="sign-in__or-line start-page__or-line"></div>
-                        <div class="sign-in__or-text start-page__or-text">OR</div>
-                        <div class="sign-in__or-line start-page__or-line"></div>
+                    <div class="new-account__or start-page__or">
+                        <div class="new-account__or-line start-page__or-line"></div>
+                        <div class="new-account__or-text start-page__or-text">OR</div>
+                        <div class="new-account__or-line start-page__or-line"></div>
                     </div>
-                    <input class="sign-in__form-input start-page__form-input start-page__form-block" 
+                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
+                           type="text" 
+                           name="name" 
+                           autocomplete="off"
+                           required 
+                           placeholder="Name">
+                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
                            type="email" 
                            name="email" 
                            autocomplete="off"
                            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
                            required 
                            placeholder="E-mail address">
-                    <input class="sign-in__form-input start-page__form-input start-page__form-block" 
+                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
                            type="password" 
                            name="password" 
                            autocomplete="off"
                            required 
                            placeholder="Password">
-                    <a href="reset-password.html" class="sign-in__forgot-link start-page__text-link">
-                        Forgot password?
-                    </a>
+                    <div class="new-account__agreement">
+                        By signing up, I agree to the Modern Site
+                        <a href="#" class="new-account__agreement-link">Privacy Policy</a> &
+                        <a href="#" class="new-account__agreement-link">Terms of Service</a>
+                    </div>
                     <button type="submit" 
-                            class="sign-in__submit-button 
+                            class="new-account__submit-button 
                                    start-page__submit-button 
                                    start-page__form-block
                                    start-page__form-button">
-                        <div class="sign-in__submit-button-text 
+                        <div class="new-account__submit-button-text 
                                     start-page__submit-button-text 
                                     start-page__form-button-text">
-                            Sign in
+                            Create
                         </div>
                     </button>
-                    <a href="new-account.html" class="sign-in__link-button 
+                    <a href="index.html" class="new-account__link-button 
                                        start-page__link-button 
                                        start-page__form-block
                                        start-page__form-button">
-                        <div class="sign-in__link-button-text 
+                        <div class="new-account__link-button-text 
                                     start-page__link-button-text
                                     start-page__form-button-text">
-                            Create a new account
+                            I already have an account
                         </div>
                     </a>
                 </form>
