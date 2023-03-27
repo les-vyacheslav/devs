@@ -8,7 +8,7 @@
     <meta name="description" content="site builder Devs">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Devs, site builder">
-    <title>Reset password</title>
+    <title>Sign in to Devs</title>
     <link rel="stylesheet" href="css/style.min.css?_v=20230327135551">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -33,42 +33,32 @@
 <body>
     <div class="page-wrapper">
 
-        <main class="page-wrapper__page-content reset-password start-page">
+        <main class="page-wrapper__page-content check-email start-page">
 
-            <div class="reset-password__content start-page__content">
-                <h1 class="reset-password__title start-page__title">
-                    Reset password
+            <div class="check-email__content start-page__content">
+                <img src="img/logo.svg" 
+                             alt="logotype" 
+                             class="check-email__logo-icon">
+                <h1 class="check-email__title start-page__title">
+                    Check your email
                 </h1>
-                <form action="#" class="reset-password__form start-page__form">
-                    <input class="reset-password__form-input start-page__form-input start-page__form-block" 
-                           type="email" 
-                           name="email" 
-                           autocomplete="off"
-                           pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
-                           required 
-                           placeholder="E-mail address">
-                    <button type="submit" 
-                            class="reset-password__submit-button 
-                                   start-page__submit-button 
-                                   start-page__form-block
-                                   start-page__form-button">
-                        <div class="reset-password__submit-button-text 
-                                    start-page__submit-button-text 
-                                    start-page__form-button-text">
-                            Send email
-                        </div>
-                    </button>
-                    <a href="index.html" class="reset-password__link-button 
-                                       start-page__link-button 
-                                       start-page__form-block
-                                       start-page__form-button">
-                        <div class="reset-password__link-button-text 
-                                    start-page__link-button-text
-                                    start-page__form-button-text">
-                            Back
-                        </div>
-                    </a>
-                </form>
+                <div class="check-email__text">
+                    A message has been sent to you by email with instructions
+                    on how to reset your&nbsp;password.
+                </div>
+                <a href="index.html" class="check-email__return-button 
+                               start-page__submit-button 
+                               start-page__form-block
+                               start-page__form-button">
+                    <div class="check-email__return-button-text 
+                                start-page__submit-button-text 
+                                start-page__form-button-text">
+                        Return to login page
+                    </div>
+                </a>
+                <a href="reset-password.html" class="check-email__resend-link start-page__text-link">
+                    Resend recovery link
+                </a>
             </div>
 
         </main>
