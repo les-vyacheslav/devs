@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Devs, site builder">
     <title>Create new account</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230327135551">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230412002827">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -31,83 +31,63 @@
     
 </head>
 <body>
-    <div class="page-wrapper">
-
-        <main class="page-wrapper__page-content new-account start-page">
-
-            <div class="new-account__content start-page__content">
-                <h1 class="new-account__title start-page__title">
-                    New account
-                </h1>
-                <form action="#" class="new-account__form start-page__form">
-                    <a href="#" class="new-account__google 
-                                       start-page__google 
-                                       start-page__form-block">
-                        <img src="img/start-page/google.svg" 
-                             alt="" 
-                             class="new-account__google-icon start-page__google-icon">
-                        <div class="new-account__google-text start-page__google-text">
-                            Continue with Google
-                        </div>
-                    </a>
-                    <div class="new-account__or start-page__or">
-                        <div class="new-account__or-line start-page__or-line"></div>
-                        <div class="new-account__or-text start-page__or-text">OR</div>
-                        <div class="new-account__or-line start-page__or-line"></div>
+    <main class="page">
+        <div class="page__content">
+            <h1 class="page__title">
+                New account
+            </h1>
+            <form action="#" class="page__form">
+                <a href="#" class="page__google">
+                    <img src="img/start-page/google.svg" 
+                            alt="" 
+                            class="page__google-icon">
+                    <div class="page__google-text">
+                        Continue with Google
                     </div>
-                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
-                           type="text" 
-                           name="name" 
-                           autocomplete="off"
-                           required 
-                           placeholder="Name">
-                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
-                           type="email" 
-                           name="email" 
-                           autocomplete="off"
-                           pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
-                           required 
-                           placeholder="E-mail address">
-                    <input class="new-account__form-input start-page__form-input start-page__form-block" 
-                           type="password" 
-                           name="password" 
-                           autocomplete="off"
-                           required 
-                           placeholder="Password">
-                    <div class="new-account__agreement">
-                        By signing up, I agree to the Modern Site
-                        <a href="#" class="new-account__agreement-link">Privacy Policy</a> &
-                        <a href="#" class="new-account__agreement-link">Terms of Service</a>
+                </a>
+                <div class="page__or">
+                    <div class="page__or-line"></div>
+                    <div class="page__or-text">OR</div>
+                    <div class="page__or-line"></div>
+                </div>
+                <input class="page__input" 
+                        type="text" 
+                        name="name" 
+                        autocomplete="off"
+                        required 
+                        placeholder="Name">
+                <input class="page__input" 
+                        type="email" 
+                        name="email" 
+                        autocomplete="off"
+                        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$"
+                        required 
+                        placeholder="E-mail address">
+                <input class="page__input" 
+                        type="password" 
+                        name="password" 
+                        autocomplete="off"
+                        required 
+                        placeholder="Password">
+                <div class="page__agreement">
+                    By signing up, I agree to the Modern Site
+                    <a href="#" class="page__agreement-link">Privacy Policy</a> &
+                    <a href="#" class="page__agreement-link">Terms of Service</a>
+                </div>
+                <button type="submit" 
+                        class="page__button submit-button">
+                    <div class="page__button-text submit-button__text">
+                        Create
                     </div>
-                    <button type="submit" 
-                            class="new-account__submit-button 
-                                   start-page__submit-button 
-                                   start-page__form-block
-                                   start-page__form-button">
-                        <div class="new-account__submit-button-text 
-                                    start-page__submit-button-text 
-                                    start-page__form-button-text">
-                            Create
-                        </div>
-                    </button>
-                    <a href="index.html" class="new-account__link-button 
-                                       start-page__link-button 
-                                       start-page__form-block
-                                       start-page__form-button">
-                        <div class="new-account__link-button-text 
-                                    start-page__link-button-text
-                                    start-page__form-button-text">
-                            I already have an account
-                        </div>
-                    </a>
-                </form>
-            </div>
-
-        </main>
-
-    </div>
-
-    <script src="js/app.min.js?_v=20230327135551"></script>
-
+                </button>
+                <a href="index.html" class="page__button link-button">
+                    <div class="page__button-text link-button__text">
+                        I already have an account
+                    </div>
+                </a>
+            </form>
+        </div>
+    </main>
+    <script src="js/app.min.js?_v=20230412002827"></script>
 </body>
 </html>

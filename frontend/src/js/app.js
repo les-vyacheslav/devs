@@ -12,20 +12,20 @@ import {clickAnimator} from "./modules/click-animation.js";
 
 new clickAnimator([
     {
-        clickableElementClassName: '.start-page__google',
-        clickedElementClassName: '.start-page__google_clicked',
+        clickableElementClassName: '.page__google',
+        clickedElementClassName: '.page__google_clicked',
     },
     {
-        clickableElementClassName: '.start-page__text-link',
-        clickedElementClassName: '.start-page__text-link_clicked',
+        clickableElementClassName: '.page__text-link',
+        clickedElementClassName: '.page__text-link_clicked',
     },
     {
-        clickableElementClassName: '.new-account__agreement-link',
-        clickedElementClassName: '.new-account__agreement-link_clicked',
+        clickableElementClassName: '.page__agreement-link',
+        clickedElementClassName: '.page__agreement-link_clicked',
     },
     {
-        clickableElementClassName: '.start-page__form-button',
-        clickedElementClassName: '.start-page__form-button_clicked',
+        clickableElementClassName: '.page__button',
+        clickedElementClassName: '.page__button_clicked',
     },
 ]).init();
 

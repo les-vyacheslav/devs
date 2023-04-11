@@ -1,62 +1,23 @@
-body {
-    background-color: $secondaryColor;
+.page {
+    width: 100%;
+    min-width: $minWidth;
+    height: 100%;
+    min-height: 100%;
+    background-color: $registrationBackgroundColor;
     font-family: $primaryFont;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
     color: $textColor1;
     
-    &.locked {
-        overflow: hidden;
+    @media (min-width: $mobile5) {
+        height: auto;
+        padding: 50px 0 30px;
     }
-}
-
-.scroller {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    overflow-y: scroll;
-    z-index: 199;
-    pointer-events: none;
-
-    &.disable-pointer {
-        z-index: 300;
-        pointer-events: auto;
-    }
-}
-
-.page-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    min-height: 100%;
-    overflow: hidden;
-
-    &__page-content {
-        position: relative;
-        flex: 1 1 auto;
-    }
-}
-
-/* 
-.container {
-    max-width: $maxContainerWidth;
-    min-width: $minWidth;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 $containerPadding;
-}
- */
-
-.start-page {
-    background-color: $registrationBackgroundColor;
 
     &__content {
         width: 100%;
-        min-width: $minWidth;
-        min-height: 100vh;
+        min-height: 100%;
         @include adaptiveValue("padding-top", 50px, 80px, $mobile4, $mobile5);
         @include adaptiveValue("padding-bottom", 15px, 30px, $mobile4, $mobile5);
         @include adaptiveValue("padding-left", 15px, 30px, $mobile4, $mobile5);
@@ -64,12 +25,23 @@ body {
         background-color: $secondaryColor;
         
         @media (min-width: $mobile5) {
-            margin: 50px auto;
+            margin: 0px auto;
             width: 536px;
-            min-height: auto;
+            min-height: 0px;
             border-radius: 10px;
             padding: 40px 30px;
         }
+
+        &_center {
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 25px;
+        width: 33px;
+        height: 33px;
     }
 
     &__title {
@@ -78,13 +50,19 @@ body {
         font-size: 32px;
         font-weight: 500;
         color: $textColor1;
+
+        &_check {
+            margin-bottom: 15px;
+        }
     }
 
     &__form {
         width: 100%;
     }
 
-    &__form-block {
+    &__google,
+    &__input,
+    &__button {
         width: 100%;
         height: 60px;
         border-radius: 10px;
@@ -111,8 +89,8 @@ body {
             }
         }
 
-        &.start-page__google_clicked,
-        &.start-page__google_clicked:hover {
+        &.page__google_clicked,
+        &.page__google_clicked:hover {
             transform: translateY(4%);
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
         }
@@ -153,7 +131,7 @@ body {
         color: $textColor3;
     }
 
-    &__form-input {
+    &__input {
         margin-bottom: 15px;
         border: 1px solid $borderColor2;
         padding: 18px;
@@ -205,9 +183,73 @@ body {
         }
 
         @include mobileClickAnimation;
+
+        &_forgot {
+            margin-bottom: 15px;
+        }
     }
 
-    &__form-button {
+    &__agreement {
+        margin-bottom: 15px;
+        margin-left: 2px;
+        margin-right: 2px;
+        line-height: 1.4;
+        font-size: 12px;
+        font-weight: 500;
+        color: #BCBCBC;
+    }
+
+    &__agreement-link {
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #BCBCBC;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (any-hover: hover) {
+
+            &:hover {
+                color: $primaryColor;
+                
+                &::before {
+                    background-color: $primaryColor;
+                }
+            }
+        }
+
+        @include mobileClickAnimation($textColor3, 5px, 5px, 0%, 0%, 4px);
+
+        &.page__agreement-link_clicked {
+            color: $primaryColor;
+
+            &::before {
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    &__text  {
+        margin: 0 auto 25px;
+        line-height: 1.6;
+        
+        @media (min-width: $mobile3) {
+            max-width: 400px;
+        }
+    }
+
+    &__button {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -216,49 +258,55 @@ body {
         transition: background-color 0.3s ease;
     }
 
-    &__form-button-text {
+    &__button-text {
         white-space: nowrap;
         line-height: 1.2;
         font-family: $primaryFont;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 300;
     }
+}
 
-    &__submit-button {
-        background-color: $primaryColor;
+.submit-button {
+    margin-bottom: 15px;
+    background-color: $primaryColor;
 
-        @media (any-hover: hover) {
-    
-            &:hover {           
-                background-color: #886c56;
-            }
-        }
+    @media (any-hover: hover) {
 
-        &.start-page__form-button_clicked {
+        &:hover {           
             background-color: #886c56;
         }
     }
 
-    &__submit-button-text {
-        color: $secondaryColor;
+    &_check {
+        margin-bottom: 25px;
     }
 
-    &__link-button {
-        background-color: #F4F4F4;
+    &.page__button_clicked {
+        background-color: #886c56;
+    }
 
-        @media (any-hover: hover) {
-    
-            &:hover {           
-                background-color: #DFDFDF;
-            }
-        }
+    &__text {
+        color: $secondaryColor;
+    }
+}
 
-        &.start-page__form-button_clicked {
+
+.link-button {
+    background-color: #F4F4F4;
+
+    @media (any-hover: hover) {
+
+        &:hover {           
             background-color: #DFDFDF;
         }
     }
 
-    &__link-button-text {
+    &.page__button_clicked {
+        background-color: #DFDFDF;
+    }
+
+    &__text {
         color: $textColor2;
     }
 }

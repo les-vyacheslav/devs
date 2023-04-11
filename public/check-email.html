@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Devs, site builder">
     <title>Sign in to Devs</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230327135551">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230412002827">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -31,41 +31,29 @@
     
 </head>
 <body>
-    <div class="page-wrapper">
-
-        <main class="page-wrapper__page-content check-email start-page">
-
-            <div class="check-email__content start-page__content">
-                <img src="img/logo.svg" 
-                             alt="logotype" 
-                             class="check-email__logo-icon">
-                <h1 class="check-email__title start-page__title">
-                    Check your email
-                </h1>
-                <div class="check-email__text">
-                    A message has been sent to you by email with instructions
-                    on how to reset your&nbsp;password.
-                </div>
-                <a href="index.html" class="check-email__return-button 
-                               start-page__submit-button 
-                               start-page__form-block
-                               start-page__form-button">
-                    <div class="check-email__return-button-text 
-                                start-page__submit-button-text 
-                                start-page__form-button-text">
-                        Return to login page
-                    </div>
-                </a>
-                <a href="reset-password.html" class="check-email__resend-link start-page__text-link">
-                    Resend recovery link
-                </a>
+    <main class="page">
+        <div class="page__content page__content_center">
+            <img src="img/logo.svg" 
+                            alt="logotype" 
+                            class="page__logo">
+            <h1 class="page__title page__title_check">
+                Check your email
+            </h1>
+            <div class="page__text">
+                A message has been sent to you by email with instructions
+                on how to reset your&nbsp;password.
             </div>
-
-        </main>
-
-    </div>
-
-    <script src="js/app.min.js?_v=20230327135551"></script>
+            <a href="index.html" class="page__button submit-button submit-button_check">
+                <div class="page__button-text submit-button__text">
+                    Return to login page
+                </div>
+            </a>
+            <a href="reset-password.html" class="page__text-link">
+                Resend recovery link
+            </a>
+        </div>
+    </main>
+    <script src="js/app.min.js?_v=20230412002827"></script>
 
 </body>
 </html>

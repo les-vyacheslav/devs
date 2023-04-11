@@ -31,9 +31,4 @@ $desktop6: 1920px;
 @import "basic-components/reset.scss";
 @import "fonts.scss";
 @import "basic-components/mixins.scss";
-@import "basic-components/common-styles.scss";
-@import "sign-in.scss";
-@import "new-account.scss";
-@import "reset-password.scss";
-@import "check-email.scss";
-
+@import "page-styles.scss";
