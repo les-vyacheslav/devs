@@ -60,7 +60,6 @@
         width: 100%;
     }
 
-    &__google,
     &__input,
     &__button {
         width: 100%;
@@ -68,46 +67,7 @@
         border-radius: 10px;
     }
 
-    &__google {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 25px;
-        transform: translateY(0%);
-        border: 1px solid $borderColor1;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease,
-                    box-shadow 0.3s ease;
-
-        @media (any-hover: hover) {
-    
-            &:hover {           
-                transform: translateY(-4%);
-                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            }
-        }
-
-        &.page__google_clicked,
-        &.page__google_clicked:hover {
-            transform: translateY(4%);
-            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-        }
-    }
-
-    &__google-icon {
-        display: block;
-        flex: 0 0 22px;
-    }
-
-    &__google-text {
-        white-space: nowrap;
-        font-weight: 500;
-        color: #1D2E4A;
-    }
-
-    &__or {
+    &__divider {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -116,7 +76,7 @@
         margin-bottom: 20px;
     }
 
-    &__or-line {   
+    &__divider-line {   
         flex: 1 1 auto;
         margin-left: 2px;
         margin-right: 2px;
@@ -124,7 +84,7 @@
         background-color: $borderColor2;
     }
 
-    &__or-text {  
+    &__divider-text {  
         flex: 0 0 auto;
         line-height: 1.4;
         font-size: 14px;
@@ -264,6 +224,41 @@
         font-family: $primaryFont;
         font-size: 20px;
         font-weight: 300;
+    }
+}
+
+.google-button {
+    gap: 10px;
+    margin-bottom: 25px;
+    transform: translateY(0%);
+    border: 1px solid $borderColor1;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+    @media (any-hover: hover) {
+
+        &:hover {           
+            transform: translateY(-4%);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &.page__button_clicked,
+    &.page__button_clicked:hover {
+        transform: translateY(4%);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    &__icon {
+        display: block;
+        flex: 0 0 22px;
+    }
+
+    &__text {
+        white-space: nowrap;
+        font-weight: 500;
+        color: #1D2E4A;
     }
 }
 
